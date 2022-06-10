@@ -19,6 +19,7 @@ body {
 h1 {
   color: #a98d8c;
   font-weight: 800;
+  margin-bottom: 2rem;
 }
 
 h4 {
@@ -26,6 +27,55 @@ h4 {
   font-weight: 600;
 }
 
+input {
+  color: rgb(74, 78, 31);
+  background-color: #a98d8c;
+  padding: 10px;
+  width: 20rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+input:active {
+  border: none;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.4; /* Firefox */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.add {
+  padding: 10px;
+  width: 6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(107, 106, 106);
+  color: aliceblue;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.add:hover {
+  background-color: rgb(215, 211, 159);
+  color: rgb(176, 8, 8);
+}
+.add:active {
+  transform: scale(0.95);
+}
 .main-container {
   margin-top: 2rem;
   display: flex;
@@ -35,6 +85,7 @@ h4 {
   width: 60vw;
   vertical-align: middle;
   height: 100%;
+  /* border: 1px solid red; */
 }
 
 .todo-item {
@@ -44,14 +95,15 @@ h4 {
   align-items: center;
   padding: 1rem 2rem;
   border-bottom: 2px solid #4d244e;
-  /* margin: 1px; */
+  margin: 1px;
+  text-transform: capitalize;
+  /* border: 1px solid white; */
+  /* border-radius: 10px; */
 }
 .todo-text h4 {
   font-weight: 800;
 }
-.todo-text {
-  border: 1px solid red;
-}
+
 .todo-text p {
   color: #ad7460;
   font-weight: 550;
@@ -59,4 +111,29 @@ h4 {
 
 .todo-item i {
   color: #ae5f75;
+  cursor: pointer;
+  /* color: white;
+  background-color: white; */
+  border-radius: 50%;
+}
+
+.top {
+  position: relative;
+}
+
+.warning {
+  position: absolute;
+  color: white;
+  background-color: rgb(167, 6, 6);
+  padding: 4px;
+  top: 86%;
+  font-size: 14px;
+  left: 70px;
+  visibility: hidden;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  margin: 1px;
+  border-radius: 10px;
+}
+#desc {
+  margin-top: 1rem;
 }
